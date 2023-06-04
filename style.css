@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hr-c: white;
+    --header-bg: #9F2B68;
+    --header-h3: aliceblue;
+    --body-bg: rgb(0, 0, 0);
+    --body-c: rgb(255, 255, 255);
+    --table-th_bg: #004040;
+    --table-th_c: #dfff00;
+    --table-th_b: #92b2cc;
+    --table-td_b: #92b2cc;
+    --table-td_bg: #004953;
+    --table-td_a_c: #00ff00;
+    --course-h3: #ffbf00;
+    --course-h5: #FF0099;
+    --course-b: chartreuse;
+
+}
+
+.light-theme {
+    --hr-c: rgb(3, 3, 3);
+    --header-bg: #be1670;
+    --header-h3: aliceblue;
+    --body-bg: rgb(255, 255, 255);
+    --body-c: rgb(0, 0, 0);
+    --table-th_bg: #e6e6fa;
+    --table-th_c: #800080;
+    --table-th_b: #92b2cc;
+    --table-td_b: #92b2cc;
+    --table-td_bg: #f0ffff;
+    --table-td_a_c: #00a86b;
+    --course-h3: #ff4500;
+    --course-h5: #003399;
+    --course-b: #800080;
+
+}
+
+body {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-c);
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+hr {
+    border: 1px dashed var(--hr-c);
+}
+
+header {
+    background-color: var(--header-bg);
+    height: 43px;
+    width: 100%;
+    text-align: center;
+}
+
+header h2 {
+    padding-top: 12px;
+    color: var(--header-h3);
+}
+
+i {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.themeicon {
+    background-color: var(--header-bg);
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    margin-top: -30px;
+    right: .7%;
+    border-radius: 50px;
+
+}
+
+header .themeicon #icon {
+    position: relative;
+    top: 13%;
+
+}
+
+.gototop {
+    background-color: #af1717;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 7%;
+    right: .7%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+ion-icon {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#icon1 {
+    margin-top: 105%;
+    background-color: #f0ffff;
+    position: fixed;
+    width: 40px;
+    cursor: pointer;
+}
+
+.Course_Table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    font-size: medium;
+    text-align: center;
+    transition: ease-in 0.1s;
+}
+
+.Course_Table th {
+    background-color: var(--table-th_bg);
+    color: var(--table-th_c);
+    border: 1px solid var(--table-th_b);
+}
+
+.Course_Table td {
+    background-color: var(--table-td_bg);
+    border: 1px solid var(--table-td_b);
+}
+
+.Course_Table td a {
+    text-decoration: none;
+    color: var(--table-td_a_c);
+}
+
+.Courses {
+    margin: 8px;
+}
+
+.Courses h3 {
+    margin: 15px;
+    text-align: center;
+    color: var(--course-h3);
+}
+
+.Courses h5 {
+    color: var(--course-h5);
+    text-align: center;
+}
+
+.Courses b {
+    color: var(--course-b);
+}
+
+.Courses h4 {
+    color: var(--course-b);
+}
+
+.DM {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.BEFA {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.OS {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.DBMS {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.JP {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.OSL {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.DBMSL {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.JPL {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.CI {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #24262b;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.credits {
+    font-size: small;
+}
+
+.name {
+    font-size: medium;
+    font-weight: 600;
+    font-family: Dancing script;
+}
+
+@media screen and (max-width: 690px) {
+    body {
+        font-size: small;
+    }
+    .Courses ol{
+        margin-left: -4%;
+    }
+    .Course_Table {
+        font-size: small;
+    }
+
+}
